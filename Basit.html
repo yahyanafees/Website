@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>BCA</title>
+
+ <!-- CSS file style  -->
+ <link rel="stylesheet" type="text/css" href="style.css">
+
+ <meta name="description" content="Personal Website of Mohamed Yamani">
+ <meta name="keywords" content="yamani, mohamed yamani, mohamedyamani ">
+ <meta name="author" content="Mohamed Yamani">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  /*set menu style */
+ul{ 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+
+li {
+    float: left;
+} 
+
+
+
+li a {
+
+    display: inline-block;
+    font-family: cursive;
+    font-size: 140%;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px 80px;
+
+    text-decoration: none;
+
+}
+
+
+li a:hover {
+
+    background-color: darkblue;
+
+}
+
+/* circle home page My pic */
+
+.circlePic{
+  border-radius: 100%;
+
+
+
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+ <center>
+
+ <!-- Main Menu -->
+
+ <ul> 
+
+  <center>
+  <li><a class="active" href="https://iul.ac.in/">Home</a></li>
+
+  <li><a href=" ">Resume</a></li>
+
+  <li><a href=" ">Work</a></li>
+
+  <li><a href="http://eve.kean.edu/~momohame/Interest.html">Interest</a></li>
+
+  <li><a href="http://eve.kean.edu/~momohame/contact.html">Contact Me</a></li>
+  </center>
+  
+ </ul>
+
+ <!-- Welcome note. animated picture, got refrene code from w3schools  -->
+
+ <div class="w3-content w3-section" style="max-width:500px">
+  <img src="mypic.jpg" style="width:400px; height: 100px">
+  </div>
+
+ <div class="w3-content w3-section" style="max-width:500px">
+  <h1>Bachelor Of Computer Aplication</h1>
+ </div>
+
+ <!-- this is the java script to animate the Welcome name and wecome note of the home page.. refrenced from from W3 schools -->
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+</div>
+
+
+<p></p>
+
+ <!-- body parghraph and home page pic of mine -->
+
+ <div id = "contents">
+    <div class = "sides" style = "padding: 35px 65px 0 120px"><
+    <div class = "sides" style = "padding: 0 35px 0 55px">
+      <p id= "paragraph">
+
+        Focusing on expertise in communication systems and information technology and their effective application in business issues, this undergraduate program covers various aspects of compute applications and integrates the latest industry developments in the course curriculum. The graduates of the program have a solid foundation in industrial computing or important aspects of computer science and analyze and optimize the use of latest technologies in the business environment. They are well-equipped to work as professionals in the fields of software development, design and implementation.
+  
+      </p>
+ </div>
+
+  <!-- footer contact Icons -->
+  <div style = "float:right; padding: 22px 450px 0 0">
+    <a href = "https://www.facebook.com/integralunilko/"><img height = 37px class = "circlePic" src = "fb.png"></a>
+    <a href = "https://www.instagram.com/integralunilko_official/?igshid=e8ra2o9tnrfc"><img height = 37px class = "circlePic" src = "insta.jpg"></a>
+    <a href = "mailto:"><img color=navy height = 35px class = "circlePic" src = "email.png"></a>
+  </div>
+
+</center>
+
+</body>
+
+</html>
+
